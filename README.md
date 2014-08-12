@@ -1,4 +1,4 @@
 courseragetcleandata
 ====================
 
-for peer assessment in geting and cleaning data course
+for peer assessment in getting and cleaning data course
