@@ -1,5 +1,5 @@
 # run_analysis.R
-# set working directory to where the data is
+# set working directory to where the data is and add libraries
 library(reshape);library(reshape2)
 setwd("UCI HAR Dataset")
 # read the test and train data in
@@ -38,5 +38,5 @@ setwd("../")
 ndnames=c("Activity","Subject")
 datnames=setdiff(colnames(b),names)
 tidystart=melt(labelleddata,id=ndnames,measure.vars=datnames)
-tidyaverages=dcast(tidystart,Subject+Activity, ~ variable,mean)
-write.table(tidyaverages,"tidyaverages.txt",row.names=T)
+tidyaverages=dcast(tidystart,Subject + Activity ~ variable,mean)
+write.table(tidyaverages,"tidyaverages.txt",row.names=F)

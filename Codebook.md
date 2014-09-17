@@ -18,6 +18,11 @@ Methods
 all fields with the word mean or std in their original description were extracted on the theory that it is easier to get rid of extraneous data than to recover deleted data.
 The list of fields was created on the command line using a grep on features.txt for std & mean then using  cut -f1 -d ' ' which gave 79 variables 
 
+3 used the 6 activity descriptions from activity_labels.txt and replace the activity code in the data with the descriptive name
+
+4 used the titles from features.txt to label the data
+
+5 summarized the merged data by activity and subject and write the file to tidyaverages.txt - instructions for reading this file are in readme.md
 
 
 
